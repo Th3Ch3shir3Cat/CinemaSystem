@@ -16,5 +16,22 @@ namespace Laba3
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form mainMenu = null;
+            this.Hide();
+            if (login.Text.Equals("admin") && password.Text.Equals("admin"))
+            {
+                mainMenu = new Form5();
+                mainMenu.ShowDialog();
+            }
+            else
+            {
+                mainMenu = new Form6();
+                mainMenu.ShowDialog();
+            }
+            this.Close();
+        }
     }
 }

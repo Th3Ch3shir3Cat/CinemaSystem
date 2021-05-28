@@ -33,11 +33,35 @@ namespace Laba3
 
             this.month.Format = DateTimePickerFormat.Custom;
             month.CustomFormat = "MMMM";
+
+            this.worker.Items.Add("Хаустов Герберт Игоревич");
+            this.worker.Items.Add("Торопова Ольга Сергеевна");
         }
 
         private void workers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.workers.CurrentCell.Value = "Я";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.workers.CurrentCell.Value = "О";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.workers.CurrentCell.Value = "С";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int indexAdd = workers.Rows.Add();
+            this.workers.Rows[indexAdd].Cells[0].Value = this.worker.SelectedItem;
         }
     }
 }

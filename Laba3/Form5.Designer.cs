@@ -43,6 +43,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Начать/Отменить продажи";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -53,6 +54,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Планирование смены";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -63,6 +65,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Редактирование расписания";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -85,6 +88,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
 
         }
